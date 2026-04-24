@@ -37,39 +37,42 @@ Moving Forward
 
  0  --> If the agent moves backward to any state that is not Terminal State.
 
--1  --> If the agent makes any invalid move. 
 
 ### Graphical Representation
 
-<img width="1600" height="1321" alt="WhatsApp Image 2026-04-24 at 4 16 04 PM" src="https://github.com/user-attachments/assets/1f2b4419-c002-4baa-b9fe-6701b8883a37" />
+<img width="1600" height="941" alt="WhatsApp Image 2026-04-24 at 10 21 06 PM" src="https://github.com/user-attachments/assets/dfb4da28-8058-4e6b-b24d-ac163de45b8d" />
+
 
 
 ## PYTHON REPRESENTATION:
 ```
 P = {
-    1:{
-        0: [(0.5,1,0,True)],
-        1: [(0.5,2,1,True)]
+    1: {
+        0: [(0.8, 1, 0, False), (0.2, 1, 0, False)],  
+        1: [(0.8, 2, 1, False), (0.2, 1, 0, False)]    
     },
-    2:{
-        0: [(0.5,1,1,True)],
-        1: [(0.5,3,1,True)]
+
+    2: {
+        0: [(0.8, 1, 0, False), (0.2, 2, 0, False)],  
+        1: [(0.8, 3, 1, False), (0.2, 2, 0, False)]    
     },
-    3:{
-        0: [(0.5,2,1,True)],
-        1: [(0.5,4,10,True)]
-    }
-    4:{
-        0: [(0.5,3,1,True)],
-        1: [(0.5,4,-1,True)]
+
+    3: {
+        0: [(0.8, 2, 0, False), (0.2, 3, 0, False)],   
+        1: [(0.8, 4, 10, True), (0.2, 3, 0, False)]    
+    },
+
+    4: {
+        0: [(1.0, 4, 0, True)],   
+        1: [(1.0, 4, 0, True)]
     }
 }
-
-
 ```
 
 ## OUTPUT:
-Write your Python output here
+
+<img width="626" height="162" alt="image" src="https://github.com/user-attachments/assets/acf9c536-fae2-471e-88f5-9063c0b000c7" />
+
 
 ## RESULT:
 Thus a real world problem has successfuly explained through MDP Process.
